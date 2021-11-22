@@ -33,6 +33,7 @@ if __name__ == '__main__':
     distancePlt['labels'] = metaData.values
     
     print('Visilizing result using plotnine')
+    # Customize your plot below.
     plotPCoA = (ggplot(distancePlt, aes('PC1', 'PC2', color='labels', fill='labels'))+
                     geom_point(size=2)+
                     stat_ellipse(geom = "polygon", alpha = 0.1)+
