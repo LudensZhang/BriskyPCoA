@@ -15,7 +15,7 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--lables', type=str, default='./data/metadata.csv', help='Labels of samples, first column represent SampleID and second column represent labels')
     parser.add_argument('-m', '--mode', type=str, default='PCA', help='Choose the analyse mode, PCA & PCoA are available')
     parser.add_argument('-d', '--distance', type=str, default='jensenshannon', help='Optional distance metric for pcoa')
-    parser.add_argument('-o', '--output', type=str, default='./visulizing_result', help='Output path of visulizing result')
+    parser.add_argument('-o', '--output', type=str, default='./visualizing_result', help='Output path of visualizing result')
     args = parser.parse_args()
     
     print('Loading data...')
